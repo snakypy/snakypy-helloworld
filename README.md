@@ -7,7 +7,8 @@
 
 ```
 $ ROOT="/tmp"
-$ git clone https://github.com/snakypy/snakypy-helloworld.git $ROOT; cd $ROOT/snakypy-helloworld
+$ git clone https://github.com/snakypy/snakypy-helloworld.git $ROOT/snakypy-helloworld
+$ cd $ROOT/snakypy-helloworld
 $ git checkout cookiecutter
 $ python -m venv venv
 $ . venv/bin/activate
