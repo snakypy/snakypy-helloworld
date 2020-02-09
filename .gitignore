@@ -124,4 +124,4 @@ test_commands.py
 /**/*/docs/modules.rst
 /**/*/docs/setup.rst
 /**/*/docs/tests.rst
-snakypy_helloworld/
+build/
