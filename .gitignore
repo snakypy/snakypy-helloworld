@@ -1,0 +1,11 @@
+## Folders
+/**/*/__pycache__
+env
+venv
+dist
+build
+temp
+pyhello.egg-info
+
+## Files
+/**/*.pyc
