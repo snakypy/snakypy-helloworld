@@ -1,0 +1,19 @@
+{
+    "full_name": "Snakypy Org",
+    "email": "contact.snakypy@gmail.com",
+    "github_username": "snakypy",
+    "pypi_username": "{{ cookiecutter.github_username }}",
+    "author_website": "https://snakypy.github.io",
+    "project_name": "Snakypy Helloworld",
+    "project_short_description": "Snakypy HelloWorld is a simple Python script to require Hello messages from the console.",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "version": "1.0.0",
+    "open_source_license": [
+        "MIT license",
+        "BSD license",
+        "ISC license",
+        "Apache Software License 2.0",
+        "GNU General Public License v3",
+        "Not open source"
+      ]
+}

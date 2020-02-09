@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+__progname__="{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}"
+
+
+case $1 in
+    build|-b|-B)
+        $(echo "$0") clear
+        ./setup.py bdist bdist_wheel
+        printf "Compiled!\n"
+    ;;
+    install|-i|-I)
+        $(echo "$0") build
+        python setup.py install
+        $(echo "$0") clear
+        printf "Installed!\n"
+    ;;
+    reinstall|-r|-R)
+    	$(echo "$0") uninstall
+     	$(echo "$0") install
+    ;;
+    clear|-c|-C)
+        rm -rf build dist *.egg-info
+        printf "Clean!\n"
+    ;;
+    uninstall|-u|-U)
+        pip uninstall ${__progname__} -y
+        printf "Uninstalled!\n"
+    ;;
+    testpypi|-tpp)
+        $(echo "$0") build
+        # Note: Create ~/.pypirc file to receive "testpypi" header.
+        twine upload --repository testpypi dist/*
+    ;;
+    pypi|-pp)
+        $(echo "$0") build
+        # Note: Create ~/.pypirc file to receive "pypi" header.
+        twine upload --repository pypi dist/*
+        # twine upload dist/*
+    ;;
+    *)
+        printf "\nUsage: $0 { install [-i] | uninstall [-u] | reinstall [-r] | build [-b] | clear [-c] | testpypi [-tpp] | pypi [-pp] }\n"
+    ;;
+esac
+exit 0

@@ -1,0 +1,3 @@
+{
+	"head": "### {{cookiecutter.project_name.title()}} ###"
+}
