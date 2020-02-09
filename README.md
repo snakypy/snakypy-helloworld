@@ -18,6 +18,7 @@ $ pip install -r requirements-dev.txt
 **Compile and install:**
 
 ```
+$ deactivate
 $ mkdir build; cd $_
 $ cookiecutter --no-input -o build https://github.com/snakypy/snakypy-helloworld.git
 $ cd build/snakypy_helloworld
