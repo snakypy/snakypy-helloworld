@@ -3,7 +3,9 @@
 `Snakypy Helloworld - Cookiecutter` is a template for [Cookiecutter](https://github.com/cookiecutter/cookiecutter) not creating a Hello World on the console with entry points.
 
 
-## Developers
+## For Developers
+
+**Download template:**
 
 ```
 $ ROOT="/tmp"
@@ -15,13 +17,14 @@ $ . venv/bin/activate
 $ pip install -r requirements-dev.txt
 ```
 
-**Compile and install:**
+**Compile template and install package:**
 
 ```
-$ deactivate
 $ mkdir build; cd $_
-$ cookiecutter --no-input -o build https://github.com/snakypy/snakypy-helloworld.git
+$ cookiecutter --no-input -o build https://github.com/snakypy/snakypy-helloworld.git --checkout cookiecutter
 $ cd build/snakypy_helloworld
+$ git checkout master
+$ deactivate
 $ python -m venv venv
 $ . venv/bin/activate
 $ pip install -r requirements-dev.txt
