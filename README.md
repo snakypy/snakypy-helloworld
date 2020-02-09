@@ -12,6 +12,7 @@ $ ROOT="/tmp"
 $ git clone https://github.com/snakypy/snakypy-helloworld.git $ROOT/snakypy-helloworld
 $ cd $ROOT/snakypy-helloworld
 $ git checkout cookiecutter
+$ git branch -D master
 $ python -m venv venv
 $ . venv/bin/activate
 $ pip install -r requirements-dev.txt
@@ -21,8 +22,8 @@ $ pip install -r requirements-dev.txt
 
 ```
 $ mkdir build; cd $_
-$ cookiecutter --no-input -o build https://github.com/snakypy/snakypy-helloworld.git --checkout cookiecutter
-$ cd build/snakypy_helloworld
+$ cookiecutter --no-input https://github.com/snakypy/snakypy-helloworld.git --checkout cookiecutter
+$ cd snakypy_helloworld
 $ git checkout master
 $ deactivate
 $ python -m venv venv
