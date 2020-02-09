@@ -9,6 +9,7 @@
 $ ROOT="/tmp"
 $ mkdir $ROOT/snakypy-helloworld-cookiecutter; cd $_
 $ git clone https://github.com/snakypy/snakypy-helloworld.git; cd snakypy-helloworld
+$ git checkout cookiecutter
 $ python -m venv venv
 $ . venv/bin/activate
 $ pip install -r requirements-dev.txt
