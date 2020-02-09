@@ -7,8 +7,7 @@
 
 ```
 $ ROOT="/tmp"
-$ mkdir $ROOT/snakypy-helloworld-cookiecutter; cd $_
-$ git clone https://github.com/snakypy/snakypy-helloworld.git; cd snakypy-helloworld
+$ git clone https://github.com/snakypy/snakypy-helloworld.git $ROOT; cd $ROOT/snakypy-helloworld
 $ git checkout cookiecutter
 $ python -m venv venv
 $ . venv/bin/activate
@@ -18,8 +17,9 @@ $ pip install -r requirements-dev.txt
 **Compile and install:**
 
 ```
-$ cookiecutter --no-input -o $ROOT https://github.com/snakypy/snakypy-helloworld.git
-$ cd $ROOT/snakypy_helloworld
+$ mkdir build; cd $_
+$ cookiecutter --no-input -o build https://github.com/snakypy/snakypy-helloworld.git
+$ cd build/snakypy_helloworld
 $ python -m venv venv
 $ . venv/bin/activate
 $ pip install -r requirements-dev.txt
