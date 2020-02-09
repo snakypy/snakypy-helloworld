@@ -20,7 +20,7 @@ $ pip install -r requirements-dev.txt
 ```
 $ cookiecutter --no-input -o $ROOT https://github.com/snakypy/snakypy-helloworld.git
 $ cd $ROOT/snakypy_helloworld
-$ python -v venv venv
+$ python -m venv venv
 $ . venv/bin/activate
 $ pip install -r requirements-dev.txt
 $ bin/make install
