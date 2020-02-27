@@ -5,7 +5,7 @@
 from setuptools import setup, find_packages
 import os
 from io import open as io_open
-from snakypy_helloworld import __PKG_NAME__, __PROJECT_CLASS_MAIN__
+from snakypy_helloworld import __PKG_NAME__, __PROJECT_CLASS_MAIN__, __version__
 
 
 """
@@ -26,7 +26,7 @@ with io_open(requirements_dev, mode='r') as fd:
 
 setup(
     name='snakypy_helloworld',
-    version='2.0.0',
+    version=__version__,
     description='Snakypy HelloWorld is a simple Python script to require Hello messages from the console.',
     author='Snakypy Org',
     author_email='contact.snakypy@gmail.com',

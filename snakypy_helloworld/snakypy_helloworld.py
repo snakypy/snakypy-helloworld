@@ -4,7 +4,8 @@
 
 import json
 import os
-from snakypy_helloworld import __PKG_NAME__
+from sys import exit
+from snakypy_helloworld import __PKG_NAME__, __version__
 
 class SnakypyHelloworld:
     """
@@ -57,6 +58,8 @@ class SnakypyHelloworld:
                                     epilog="See you later!!")
             parser.add_argument('--name', '-n',
                                 help='This option shows welcome to someone.')
+            parser.add_argument('--version', '-v', action="store_true", default=False,
+                                help='Shows the current version.')
             args = parser.parse_args()
             return args
         except Exception as err:
@@ -69,6 +72,9 @@ class SnakypyHelloworld:
             Hello's message changes.
         """
         try:
+            if self.menu().version:
+                print(f'{__version__}')
+                exit(0)
             if self.menu().name is None and self.NAME == 'World!':
                 return 'Hello, World!'
                 print('I was raised with Python. :)')
