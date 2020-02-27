@@ -1,52 +1,57 @@
 Snakypy Helloworld
-=============================
+==================
 
+.. image:: https://img.shields.io/github/commit-activity/y/snakypy/snakypy-helloworld.svg?style=flat-square
+    :target: https://github.com/snakypy/snakypy-helloworld/graphs/commit-activity
+
+.. image:: https://img.shields.io/github/last-commit/snakypy/snakypy-helloworld/master.svg?style=flat-square 
+    :target: https://github.com/snakypy/snakypy-helloworld/commits/master
+
+ .. image:: https://img.shields.io/pypi/dd/snakypy-helloworld.svg?style=flat-square 
+    :target: https://pypi.org/project/snakypy-helloworld
+
+.. image:: https://img.shields.io/github/license/snakypy/snakypy-helloworld.svg?style=flat-square
+    :target: https://raw.githubusercontent.com/snakypy/snakypy-helloworld/master/LICENSE
 
 ``Snakypy Helloworld`` is a simple script with parameterized to show Hello message.
 The focus of this project is to show how to create a package for PyPi.
 You can download the package and study it. :)
 
-.. contents:: Table of contents
-   :backlinks: top
-   :local:
+Requirements
+----------------------
 
+To work correctly, you will first need:
+
+* `python`_ (v3.7 or recent) must be installed.
+* `pip`_ (v19.3 or recent) must be installed.
 
 Installation
-------------
+------------------
 
 Latest PyPI stable release
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-|PyPI-Status| |PyPI-Download-Day|
 
 .. code:: sh
 
-    pip install snakypy-helloworld
-
+    $ pip install snakypy-helloworld
 
 Usage
------
+---------
 
 .. code:: sh
 
-    $ snakypy-helloworld
+    $ helloworld.py
 
 ...with parameter:
 
 .. code:: sh
 
-    $ snakypy-helloworld -n MyName
+    $ helloworld.py -n MyName
 
 To know help use:
 
 .. code:: sh
 
-    $ snakypy-helloworld -h
-
-Latest development release on GitHub
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-|GitHub-Status| |GitHub-Stars| |GitHub-Commits| |GitHub-Forks| |GitHub-Last-Commit-Branch| |GitHub-Download-Total|
+    $ helloworld.py -h
 
 Pull and install in the current directory:
 
@@ -54,44 +59,26 @@ Pull and install in the current directory:
 
     pip install -e git+https://github.com/snakypy/snakypy-helloworld.git@master#egg=snakypy-helloworld
 
-Changelog
----------
+License
+-----------
 
-The list of all changes is available either on GitHub's Releases:
-|GitHub-Status|, on the
-`website <https://github.com/snakypy/snakypy-helloworld>`__.
+The gem is available as open source under the terms of the `MIT License`_ © William Canin
 
+Links
+--------
 
-LICENCE
--------
+* Code: https://github.com/snakypy/snakypy-helloworld
+* Documentation: https://github.com/snakypy/snakypy-helloworld/README.rst
+* Releases: https://pypi.org/project/snakypy-helloworld/
+* Issue tracker: https://github.com/snakypy/snakypy-helloworld/issues
 
-Open Source: |LICENCE|
+Credits
+-----------
 
+* Name: William C. Canin
+* Country: Brazil - SP
+* E-Mail: william.costa.canin@gmail.com
+* Personal page: `William Canin`_
 
-Authors
--------
-
-The main developer are:
-
-- William Canin (`snakypy <https://github.com/snakypy>`__)
-
-.. |LICENCE| image:: https://img.shields.io/github/license/snakypy/snakypy-helloworld.svg?style=flat-square
-   :target: https://raw.githubusercontent.com/snakypy/snakypy-helloworld/master/LICENSE
-.. |GitHub-Status| image:: https://img.shields.io/github/tag/snakypy/snakypy-helloworld.svg?style=flat-square
-   :target: https://github.com/snakypy/snakypy-helloworld/releases
-.. |GitHub-Stars| image:: https://img.shields.io/github/stars/snakypy/snakypy-helloworld.svg?style=social
-   :target: https://github.com/snakypy/snakypy-helloworld/stargazers
-.. |GitHub-Commits| image:: https://img.shields.io/github/commit-activity/y/snakypy/snakypy-helloworld.svg?style=flat-square
-   :target: https://github.com/snakypy/snakypy-helloworld/graphs/commit-activity
-.. |GitHub-Last-Commit-Branch| image:: https://img.shields.io/github/last-commit/snakypy/snakypy-helloworld/master.svg?style=flat-square 
-    :target: https://github.com/snakypy/snakypy-helloworld/commits/master
-.. |GitHub-Forks| image:: https://img.shields.io/github/forks/snakypy/snakypy-helloworld.svg?style=flat-square
-   :target: https://github.com/snakypy/snakypy-helloworld/network
-.. |GitHub-Download-Total| image:: https://img.shields.io/github/downloads/snakypy/snakypy-helloworld/total.svg?style=flat-square
-   :target: https://github.com/snakypy/snakypy-helloworld/pulse
-.. |PyPI-Status| image:: https://img.shields.io/pypi/status/snakypy-helloworld.svg?style=flat-square
-   :target: https://pypi.org/project/snakypy-helloworld
-.. |PyPI-Download-Day| image:: https://img.shields.io/pypi/dd/snakypy-helloworld.svg?style=flat-square 
-   :target: https://pypi.org/project/snakypy-helloworld
-
-   
+.. _MIT License: https://github.com/snakypy/snakypy-helloworld/blob/master/LICENSE
+.. _William Canin: http://williamcanin.github.io
