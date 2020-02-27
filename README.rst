@@ -7,7 +7,7 @@ Snakypy Helloworld
 .. image:: https://img.shields.io/github/last-commit/snakypy/snakypy-helloworld/master.svg?style=flat-square 
     :target: https://github.com/snakypy/snakypy-helloworld/commits/master
 
- .. image:: https://img.shields.io/pypi/dd/snakypy-helloworld.svg?style=flat-square 
+.. image:: https://img.shields.io/pypi/dd/snakypy-helloworld.svg?style=flat-square 
     :target: https://pypi.org/project/snakypy-helloworld
 
 .. image:: https://img.shields.io/github/license/snakypy/snakypy-helloworld.svg?style=flat-square
@@ -82,3 +82,5 @@ Credits
 
 .. _MIT License: https://github.com/snakypy/snakypy-helloworld/blob/master/LICENSE
 .. _William Canin: http://williamcanin.github.io
+.. _`python`: https://python.org
+.. _pip: https://pip.pypa.io/en/stable/quickstart/
