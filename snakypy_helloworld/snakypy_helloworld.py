@@ -13,7 +13,7 @@ class SnakypyHelloworld:
 
     config = {
         'appname': 'Snakypy Helloworld',
-        'appexec': f'{__PKG_NAME__}',
+        'appexec': 'helloworld.py',
         'author': {
             'name': 'Snakypy Org',
             'email': 'contact.snakypy@gmail.com',
