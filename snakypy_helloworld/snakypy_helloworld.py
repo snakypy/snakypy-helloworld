@@ -45,14 +45,14 @@ class SnakypyHelloworld:
             This method is responsible for passing an optional parameter
             to display a custom message on the console. In addition, I also
             displayed other functionality, such as showing help. To do this,
-            run {__PKG_NAME__} --help" on the console.
+            run helloworld.py --help" on the console.
         """
         from argparse import ArgumentParser, RawTextHelpFormatter
         try:
             parser = ArgumentParser(prog=self.config['appname'],
                                     usage=f'{self.config["appexec"]} <optional arguments>',
-                                    description=f'{self.config["appexec"]} is a simple script ' +
-                                                'with parameterized to show Hello message.',
+                                    description='Snakypy Helloworld is a simple script ' +
+                                                'with parameterized to show hello message.',
                                     formatter_class=RawTextHelpFormatter,
                                     epilog="See you later!!")
             parser.add_argument('--name', '-n',
