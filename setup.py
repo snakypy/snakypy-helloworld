@@ -26,7 +26,7 @@ with io_open(requirements_dev, mode='r') as fd:
 
 setup(
     name='snakypy_helloworld',
-    version='1.0.0',
+    version='2.0.0',
     description='Snakypy HelloWorld is a simple Python script to require Hello messages from the console.',
     author='Snakypy Org',
     author_email='contact.snakypy@gmail.com',
@@ -48,6 +48,6 @@ setup(
     ],
     python_requires='>=3.6',
     keywords='snakypy_helloworld hello world helloworld console',
-    entry_points={'console_scripts': [f'{__PKG_NAME__}=snakypy_helloworld.snakypy_helloworld:{__PROJECT_CLASS_MAIN__}']},
+    entry_points={'console_scripts': [f'helloworld.py=snakypy_helloworld.snakypy_helloworld:{__PROJECT_CLASS_MAIN__}']},
     package_data={'snakypy_helloworld': ['data/data.json']}
 )
