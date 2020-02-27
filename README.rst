@@ -4,14 +4,15 @@ Snakypy Helloworld
 .. image:: https://img.shields.io/github/commit-activity/y/snakypy/snakypy-helloworld.svg?style=flat-square
     :target: https://github.com/snakypy/snakypy-helloworld/graphs/commit-activity
 
-.. image:: https://img.shields.io/github/last-commit/snakypy/snakypy-helloworld/master.svg?style=flat-square 
+.. image:: https://img.shields.io/github/last-commit/snakypy/snakypy-helloworld/master.svg?style=flat-square
     :target: https://github.com/snakypy/snakypy-helloworld/commits/master
 
-.. image:: https://img.shields.io/pypi/dd/snakypy-helloworld.svg?style=flat-square 
+.. image:: https://img.shields.io/pypi/dd/snakypy-helloworld.svg?style=flat-square
     :target: https://pypi.org/project/snakypy-helloworld
 
 .. image:: https://img.shields.io/github/license/snakypy/snakypy-helloworld.svg?style=flat-square
     :target: https://raw.githubusercontent.com/snakypy/snakypy-helloworld/master/LICENSE
+
 
 ``Snakypy Helloworld`` is a simple script with parameterized to show Hello message.
 The focus of this project is to show how to create a package for PyPi.
